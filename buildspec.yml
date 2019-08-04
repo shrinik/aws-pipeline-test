@@ -1,13 +1,9 @@
-version: 0.2
+version: 0.1
 
 phases:
-  install:
-    runtime-versions:
-      ruby: 2.6
   build:
     commands:
       - gcc -o hello hello.c
 artifacts:
   files:
     - hello
-  name: hello-$(date +%Y-%m-%d)
