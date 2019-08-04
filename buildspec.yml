@@ -6,5 +6,8 @@ phases:
       ruby: 2.6
   build:
     commands:
-      - echo "******** Building C program ********"
       - gcc -o hello hello.c
+artifacts:
+  files:
+    - hello
+  name: hello-$(date +%Y-%m-%d)
